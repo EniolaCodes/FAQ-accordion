@@ -8,12 +8,13 @@
 body{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    background:  hsl(275, 100%, 97%);
+    /* background:  hsl(275, 100%, 97%); */
+
     /* background: url(/assets/images/background-pattern-desktop.svg); */
 }
 .container{
-    background: url(/assets/images/background-pattern-desktop.svg);
     z-index: 900;
+    background: purple;
 }
 .starHolder{
     display: flex;
