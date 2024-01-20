@@ -8,50 +8,64 @@
 body{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    /* background:  hsl(275, 100%, 97%); */
-    background: url(/assets/images/background-pattern-desktop.svg);
+    background:  hsl(275, 100%, 97%);
+    /* background: url(/assets/images/background-pattern-desktop.svg); */
 }
-
+.container{
+    background: url(/assets/images/background-pattern-desktop.svg);
+    z-index: 900;
+}
 .starHolder{
     display: flex;
-    gap:2rem;
-    padding: 0.9rem 0.6rem;
+    gap: 1rem;
+}
+.star{
+    width: 30px;
 }
 .faqsBox{
     max-width: 37.5rem;
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.9rem 1.9rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     border-radius: 0.5rem;
-    background:  hsl(275, 100%, 97%);
-height: auto;
-    
-    
-    
+    background:  hsl(275, 100%, 97%);  
+}
+h2{
+    font-size: 1rem;
+    font-weight: 700;
 }
 .question{
-    border: 0.05rem solid hsl(292, 16%, 49%);
-    border: none;
-    border-radius: 0.3rem;
-    padding: 0.9rem;
     margin-top: 1.5rem;
+    border: 0.01rem solid hsl(292, 16%, 49%);  
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
-h1, button{
-    color: hsl(292, 42%, 14%);
+.accordionWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordionWrapper:after {
+    content: '\002B';
+    font-weight: 700;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .active, .accordionWrapper:hover{
+    opacity: 0.4;
+  }
+.answer{
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-button{
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background: transparent;
-}
-p{
-    color: hsl(292, 16%, 49%);
-    padding-top: 1.5rem;
-}
