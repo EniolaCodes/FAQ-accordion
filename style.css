@@ -8,13 +8,17 @@
 body{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    /* background:  hsl(275, 100%, 97%); */
-
-    /* background: url(/assets/images/background-pattern-desktop.svg); */
+}
+.bgFirst{
+        background: url(/assets/images/background-pattern-desktop.svg);
+        height: 40vh;
+}
+.bgSecond{
+    background: hsl(275, 100%, 97%);
+    height: 60vh;
 }
 .container{
-    z-index: 900;
-    background: purple;
+    z-index: 1;
 }
 .starHolder{
     display: flex;
@@ -34,7 +38,7 @@ body{
     margin-top: 5rem;
     margin-bottom: 5rem;
     border-radius: 0.5rem;
-    background:  hsl(275, 100%, 97%);  
+    background:  hsl(0, 0%, 100%);  
 }
 h2{
     font-size: 1rem;
